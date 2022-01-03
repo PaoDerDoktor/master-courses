@@ -13,7 +13,7 @@ Vous aurez besoin d'un éditeur de texte et de [git](https://github.com/git-guid
 - Tout document de cours doit être, pour le moment, en Markdown
 - Dans le futur et selon les discussions, le format pourrait être revu en LaTeX
 - Les fichiers Markdown doivent suivre [ces règles](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md), définies pour [Markdown lint](https://github.com/DavidAnson/markdownlint/tree/v0.24.0).
-  - Vous pouvez utiliser ``Markdown Lint`` pour bien former vos fichiers markdown
+    - Vous pouvez utiliser ``Markdown Lint`` pour bien former vos fichiers markdown
 - Pour les mathématiques, écrivez comme vous écririez du `LaTeX`. par exemple :
 
         [texte markdown]
@@ -37,16 +37,16 @@ Chaque **commit** doit suivre les règles suivantes :
 
 - Chaque commit doit être décrit en français après le préfixe
 - La description d'un commit doit être préfixée de la manière suivante :
-  - ``add:`` ajout d'un ou plusieurs fichiers
-  - ``del:`` effacement d'un ou plusieurs fichiers
-  - ``fuse:`` fusion de fichiers
-  - ``typo:`` correction de fautes
-  - ``meta:`` modification de fichiers gits (gitignore, readme, ...) ou de dossiers
-  - ``append:`` ajout d'informations à un fichier
-  - ``sources:`` ajout de sources à un fichier
-  - ``pics:`` ajout d'illustrations à un fichier
-  - ``conv:`` conversion d'un fichier
-  - ``other:`` tout le reste
+    - ``add:`` ajout d'un ou plusieurs fichiers
+    - ``del:`` effacement d'un ou plusieurs fichiers
+    - ``fuse:`` fusion de fichiers
+    - ``typo:`` correction de fautes
+    - ``meta:`` modification de fichiers gits (gitignore, readme, ...) ou de dossiers
+    - ``append:`` ajout d'informations à un fichier
+    - ``sources:`` ajout de sources à un fichier
+    - ``pics:`` ajout d'illustrations à un fichier
+    - ``conv:`` conversion d'un fichier
+    - ``other:`` tout le reste
 
 ## Structure d'un fichier Markdown
 
@@ -63,9 +63,9 @@ Voici quelques règles de rédaction, pour l'instant non-vérifiées par le lint
 - Faites le moins de fautes d'orthographe, de conjugaison et de grammaire possible, pour garder le document lisible
 - N'hésitez pas à découper le document en sous-parties si besoin
 - Ne sous-estimez pas l'intérêt des mots en **gras** et en *italique* : ils aident à la compréhension
-  - Notre standard pour l'italique est l'astérisque simple : ``*exemple*``
-  - Notre standard pour le gras est l'astérisque double : ``**exemple**``
-  - Privilégiez le gras pour le plus important
+    - Notre standard pour l'italique est l'astérisque simple : ``*exemple*``
+    - Notre standard pour le gras est l'astérisque double : ``**exemple**``
+    - Privilégiez le gras pour le plus important
 
 ## Organisation du dépôt
 
