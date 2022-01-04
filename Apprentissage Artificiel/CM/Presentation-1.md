@@ -1,4 +1,4 @@
-# Apprentissage Artificiel - Cours 0
+# Apprentissage Artificiel - Cours 0 - Partie 1
 
 L'idée de cette matière est de permettre à des machines **d'apprendre**. Apprendre c'est :
 
