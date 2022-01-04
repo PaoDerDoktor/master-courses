@@ -182,7 +182,7 @@ Dans ce cours; on va plutôt se concentrer sur les approches *batch-learning*
 
 Plusieurs méthodes existent :
 
-#### La validation croisée :
+#### La validation croisée
 
 Le processus d'apprentissage optimise les paramètres du modèle afin de minimiser un critère d'erreur sur la base d'apprentissage. Il est important de choisir les hyperparamètres sur un échantillon de validation indépendant automatiquement distribué
 
