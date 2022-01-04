@@ -115,4 +115,8 @@ Au regard de l'étude précédente se dégagent deux solutions :
 1. Fixer la forme et le volume de la région
 2. On fixe le nombre de points dans la région (méthode des `k` plus proches voisins)
 
-<!-- TODO : Compléter -- je me tape un mal de crane immense, je m'arrete de noter ici pour le moment>
+<!-- TODO : Compléter -- je me tape un mal de crane immense, je m'arrete de noter ici pour le moment -->
+
+## Sources
+
+- CM de Monsieur François Rioult du 3/01/2022

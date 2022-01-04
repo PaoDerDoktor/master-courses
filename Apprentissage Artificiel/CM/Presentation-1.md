@@ -306,3 +306,7 @@ On procède ainsi :
     - Par un filtre dérivatif horizontal ``[-1, 0, 1]`` et vertical ``[-1, 0, 1]`` <!-- FIXME: erreur ? -->
     - Par un filtre de Sobel
 2. <!-- TODO : Completer -->
+
+## Sources
+
+- CM de Monsieur Alexis Lechervy du 4/01/2022
