@@ -12,7 +12,7 @@ Vous aurez besoin d'un éditeur de texte et de [git](https://github.com/git-guid
 
 - Tout document de cours doit être, pour le moment, en Markdown
 - Dans le futur et selon les discussions, le format pourrait être revu en LaTeX
-- Les fichiers Markdown doivent suivre [ces règles](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md), définies pour [Markdown lint](https://github.com/DavidAnson/markdownlint/tree/v0.24.0).
+- Les fichiers Markdown doivent suivre [ces règles](https://github.com/DavidAnson/markdownlint/blob/v0.24.0/doc/Rules.md) de bases avec [ces spécialisations](https://github.com/PaoDerDoktor/master-courses/blob/e5c6f22ab5c768ad91e79bf28ad7b3d9e562ba05/.github/workflows/markdownLint.config.json), définies pour [Markdown lint](https://github.com/DavidAnson/markdownlint/tree/v0.24.0).
     - Vous pouvez utiliser ``Markdown Lint`` pour bien former vos fichiers markdown
 - Pour les mathématiques, écrivez comme vous écririez du `LaTeX`. par exemple :
 
