@@ -58,14 +58,14 @@ En 2007, les véhicules ont parcouru 94km en moins de 6h dans un contexte urbain
 Ces systèmes utilisent énormément de "briques" :
 
 - Système de trajectoire
-  - Données de traffic
-  - Graphe des routes
-  - Qualité des routes
+    - Données de traffic
+    - Graphe des routes
+    - Qualité des routes
 - Capteurs
-  - Où est la Route
-  - Piétons
-  - Véhicule
-  - Signalisation
+    - Où est la Route
+    - Piétons
+    - Véhicule
+    - Signalisation
 - Vitesse du moteur, chaleur, etc
 
 ### Suivi en temps réel de personne dans une foule
@@ -94,9 +94,9 @@ Ainsi le monde commercial est très friand d'algorithmes d'apprentissage pour bo
 
 1. Définir le problème à résoudre
 2. Construire la base de données
-   1. Acquérir les données
-   2. preparer et nettoyer les donnees
-   3. repartir les donnees
+    1. Acquérir les données
+    2. preparer et nettoyer les donnees
+    3. repartir les donnees
 3. Définir une representation des donnees
 4. choisir entraîner évaluer et optimiser
 
@@ -105,7 +105,6 @@ Ainsi le monde commercial est très friand d'algorithmes d'apprentissage pour bo
 Souvent on se concentre trop sur le 4e point
 
 ### Définir le problème d'apprentissage
-
 
 On se pose différentes questions ?
 Quels sont mes données (sons, images, vidéos...) ? Quels sont mes utilisateurs (humains, entreprises, agents, ...) ? Comment je les fait interagir ? Quel famille d'algo ?
@@ -117,7 +116,6 @@ Quels sont mes données (sons, images, vidéos...) ? Quels sont mes utilisateurs
 <!-- TODO: Corriger tout ca -->
 
 Les algo d'apprentissage auto reposent **sur des données**. Elles sont trop souvent oubliées : mais pour avoir des apprentissages de qualité (surtout sur les algo à la mode), il faut BEAUCOUP de données
-
 
 Si on cherche en tant qu'humain à définir à l'année près l'age d'une personne, on a du mal. mais il existe des algorithmes ayant de bien meilleures performances. Mais pour que cela fonctionne, il faut des millions de visages : l'algo s'entraîne sur des données, et plus il y a de données plus l'algorithme a rencontré de cas, ce qui lui permet de prévoir plus de nouveaux cas inconnus
 
@@ -305,6 +303,6 @@ Le principe est de calculer des gradients de l'image selon un nombre donné d'or
 On procède ainsi :
 
 1. Calcul du gradient de l'image
-   - Par un filtre dérivatif horizontal ``[-1, 0, 1]`` et vertical ``[-1, 0, 1]`` <!-- FIXME: erreur ? -->
-   - Par un filtre de Sobel
+    - Par un filtre dérivatif horizontal ``[-1, 0, 1]`` et vertical ``[-1, 0, 1]`` <!-- FIXME: erreur ? -->
+    - Par un filtre de Sobel
 2. <!-- TODO : Completer -->
