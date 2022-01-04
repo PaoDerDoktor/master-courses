@@ -1,0 +1,12 @@
+{
+    "default": true,
+    "MD003": { "style": "atx" },
+    "MD004": { "dash" : "dash" },
+    "MD007": { "indent": 4 },
+    "MD010": { "spaces_per_tab": 4 },
+    "MD013": false,
+    "MD026": ".,;: 。，；：",
+    "MD046": "fenced",
+    "MD049": "asterisk",
+    "MD050": "asterisk"
+}
