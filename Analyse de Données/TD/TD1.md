@@ -100,7 +100,8 @@ On pourrait rajouter des variables qualitatives : Catégorie socio-professionnel
 
 ## Statistiques Descriptives - Analyse en Correspondance Multiples (ACM)
 
-> Tableau 2 : XXX
+> Tableau `2` : XXX
+>
 > |   | 0 | 1 | 0 | 1 | 0 | 1 |
 > |:--|--:|--:|--:|--:|--:|--:|
 > | 1 | 1 | 0 | 0 | 1 | 0 | 1 |
@@ -124,7 +125,7 @@ Le tableau 2 est un **tableau disjonctif complet**. Il possède *autant de ligne
 <!-- TODO : À compléter -->
 
 > Soit le tableau `3` :
-> 
+>
 > |           | `num=0` | `num=1` | `act=0` | `act=1` | `simpl=0` | `simpl=1` |
 > |:----------|:-------:|:-------:|:-------:|:-------:|:---------:|:---------:|
 > | `num=0`   |    37   |     0   |     6   |    31   |    26     |     11    |
@@ -133,6 +134,8 @@ Le tableau 2 est un **tableau disjonctif complet**. Il possède *autant de ligne
 > | `act=1`   |    31   |   113   |     0   |    NA   |    87     |     57    |
 > | `simpl=0` |    26   |    81   |    20   |    87   |    NA     |      0    |
 > | `simpl=1` |    11   |    60   |    14   |    57   |     0     |     71    |
+>
+> Comment s'appelle le tableau 3 ? Identifiez les valeurs manquantes notées NA
 
 Le tableau `3` est un tableau de **Burt**.
 
@@ -144,4 +147,87 @@ Chaque case ``(x=a, y=b)`` correspond au nombre d'individus ayant dans leur rép
 ### Question 6)
 
 > Combien d'axes peut-on utiliser pour représenter nos variables (tableau `4`) ? Quelle est la proportion de l'inertie représentée par les deux premiers axes ? Retrouver le résultat par calcul.
+>
+> Soit le tableau `4` - les valeurs propres :
+>
+> ``eigenvalue percentage of variance cumulative percentage of variance``
+> | dim 1 | 0.3724075 | 37.24075 |  37.24075
+> | dim 2 | 0.3306734 | 33.06734 |  70.30809
+> | dim 3 | 0.2969191 | 29.69191 | 100.00000
 
+Le nombre d'axes requis pour représenter nos variables est de 3, puisqu'on dispose de 3 variables actives (valeur propre différente de 0).
+
+L'inertie représentée par les deux premiers axes est de 70.30% (le premier axe est de 37.24% et le second de 33.06%, ``33.06 + 37.24 = 70.30``).
+
+**On rappelle la "règle" pour conserver des axes :** On conserve les axes  qui expliquent plus de $\frac{1}{p}$ de la variance totale, $p$ étant le nombre de variables
+
+On peut conserver l'axe `dim1` et l'axe `dim2`, puisqu'ici $\frac{1}{p} = \frac{1}{3}$ et que les deux axes ont une valeur propre supérieure à $\frac{1}{3}$, contrairement à `dim3` qui n'a qu'une valeur propre de 0.29.
+
+### Question 7)
+
+> Les contributions sont données dans le tableau `5`. Certaines données sont manquantes, identifiez-les. Commentez.
+>
+> Soit le tableau `5` - tableau des contributions
+>
+> | modalité / Dimension |  `Dim 1`  |   `Dim 2`  |   `Dim 3`  |
+> |:---------------------|----------:|-----------:|-----------:|
+> | `numérique_0`        |     NA    |     NA     |     NA     |
+> | `numérique_1`        |  9.953803 |  0.1637762 | 10.6689378 |
+> | `actualisation_0`    |  6.986420 | 71.6494994 |  2.2629571 |
+> | `actualisation_1`    |  1.649572 | 16.9172429 |  0.5343093 |
+> | `simpl_0`            | 17.342407 |  4.2461834 | 18.2990503 |
+> | `simpl_1`            | 26.135740 |  6.3991779 | 27.5774420 |
+
+Les valeurs du tableau `5` sont des pourcentages. Ces pourcentages indiquent le taux auxquels les différentes variables contribuent aux coordonnées de la dimension indiquée. La somme des taux de chaque dimension doit être égale à 100, on trouve ainsi :
+
+| modalité / Dimension |  `Dim 1`  |   `Dim 2`  |   `Dim 3`  |
+|:---------------------|----------:|-----------:|-----------:|
+| `numérique_0`        | 37.932059 |  0.6241202 | 40.6573035 |
+| `numérique_1`        |  9.953803 |  0.1637762 | 10.6689378 |
+| `actualisation_0`    |  6.986420 | 71.6494994 |  2.2629571 |
+| `actualisation_1`    |  1.649572 | 16.9172429 |  0.5343093 |
+| `simpl_0`            | 17.342407 |  4.2461834 | 18.2990503 |
+| `simpl_1`            | 26.135740 |  6.3991779 | 27.5774420 |
+
+- Pour l'axe 1 : la modalité `numérique_0` contribue fortement, avec la variable `simpl` sur ses deux modalités.
+- Pour l'axe 2 : La variable `actualisation` contribue fortement sur ses deux modalités, la variable `numérique` contribue à peine.
+- Pour l'axe 2, la modalité `numérique_0` contribue fortement; avec `simpl_1`.
+
+### Question 8)
+
+> Quel indicateur est représenté dans le tableau 6 ? Compléter les valeurs manquantes, puis commenter.
+>
+> Soit le tableau `6` - Qualité de la représentation :
+>
+> | modalité / Dimension |   `Dim 1`  | `Dim 2` |   `Dim 3`  |
+> |:---------------------|-----------:|--------:|-----------:|
+> | `numérique_0`        | 0.53499165 |    NA   | 0.45719225 |
+> | `numérique_1`        | 0.53499165 |    NA   | 0.45719225 |
+> | `actualisation_0`    | 0.09648324 |    NA   | 0.02491225 |
+> | `actualisation_1`    | 0.09648324 |    NA   | 0.02491225 |
+> | `simpl_0`            | 0.48574766 |    NA   | 0.40864822 |
+> | `simpl_1`            | 0.48574766 |    NA   | 0.40864822 |
+
+L'indicateur représenté dans le tableau `6` est le **cosinus carré** des variables. La somme de chaque ligne doit valoir 100, puisque chaque variable active doit être représentée. On calcule alors le tableau suivant :
+
+| modalité / Dimension |   `Dim 1`  |   `Dim 2`  |   `Dim 3`  |
+|:---------------------|-----------:|-----------:|-----------:|
+| `numérique_0`        | 0.53499165 | 0.00781609 | 0.45719225 |
+| `numérique_1`        | 0.53499165 | 0.00781609 | 0.45719225 |
+| `actualisation_0`    | 0.09648324 | 0,87860451 | 0.02491225 |
+| `actualisation_1`    | 0.09648324 | 0,87860451 | 0.02491225 |
+| `simpl_0`            | 0.48574766 | 0,10560412 | 0.40864822 |
+| `simpl_1`            | 0.48574766 | 0,10560412 | 0.40864822 |
+
+<!-- TODO : Peut-être rajouter un commentaire -->
+
+### Question 9)
+
+> Comment pourriez-vous interpréter les axes ?
+> <!-- Rajouter le graphe -->
+
+Le graphe est un plan factoriel. C'est une représentation des variables d'origine, sur le plan factoriel défini par `Dim 1` et `Dim 2`.
+
+L'axe 1 Rapproche ceux qui souhaitent une numérisation de ceux qui souhaitent une simplification, et réciproquement (ceux qui ne souhaitent pas une numérisation de ceux qui ne souhaitent pas de simplification).
+
+L'axe 2 semble quant à lui opposer les personnes voulant actualiser régulièrement l'atlas à ceux qui ne le veulent pas.
