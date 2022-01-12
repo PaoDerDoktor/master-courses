@@ -13,18 +13,18 @@ La distance euclidienne AB est : $\sqrt{(x_A - x_B)^2 + (y_A - y_B)^} = \sqrt{(-
 > $$
 > A =
 > \begin{matrix}
->   1 & -3 & 3 \\
->   3 & -5 & 3 \\
->   6 & -6 & 4
+> 1 & -3 & 3 \\
+> 3 & -5 & 3 \\
+> 6 & -6 & 4
 > \end{matrix}
 > $$
 >
 > $$
 > P =
 > \begin{matrix}
->   1 &  1 & 1 \\
->   1 &  0 & 1 \\
->   1 & -1 & 2
+> 1 &  1 & 1 \\
+> 1 &  0 & 1 \\
+> 0 & -1 & 2
 > \end{matrix}
 > $$
 
@@ -111,8 +111,8 @@ $$
 > $$
 > A =
 > \begin{bmatrix}
->   6 & 3 \\
->   1 & 4
+> 6 & 3 \\
+> 1 & 4
 > \end{bmatrix}
 > $$
 
