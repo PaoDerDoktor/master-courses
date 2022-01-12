@@ -8,7 +8,7 @@ L'idée de cette matière est de permettre à des machines **d'apprendre**. Appr
 
 Mais ce n'est pas :
 
-- Réciter par coeur (*hard coding*)
+- Réciter par cœur (*hard coding*)
 - Appliquer un code préexistant
 
 ## Notion d'apprentissage en informatique

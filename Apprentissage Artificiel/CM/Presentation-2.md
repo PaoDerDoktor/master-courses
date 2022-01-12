@@ -73,7 +73,7 @@ $$
 P(C_{i}) = \frac{nombre d'exemples dans la classe}{nombre d'exemples total} = \frac{\sum_{k=1}^{n} 1_{c_{x_{k}} = c_{i}}}{n}
 $$
 
-Une solution intermédiaire (formule de Laplace) est à utiliser dans le cas où la fréquence d'appartion des classes est imprécise par manque d'exemples.
+Une solution intermédiaire (formule de Laplace) est à utiliser dans le cas où la fréquence d'apparition des classes est imprécise par manque d'exemples.
 
 $$
 P(C_{i})
@@ -119,4 +119,4 @@ Au regard de l'étude précédente se dégagent deux solutions :
 
 ## Sources
 
-- CM de Monsieur François Rioult du 3/01/2022
+- CM de Monsieur Alexis Lechervy du 3/01/2022
