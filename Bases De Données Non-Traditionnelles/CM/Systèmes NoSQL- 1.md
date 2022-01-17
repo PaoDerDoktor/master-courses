@@ -235,6 +235,55 @@ Algorithme utilisé aujourd'hui. Il prend un jeu de données en entrée, le sép
 
 <!-- (Encore une fois, il explique mal et on comprend rien) -->
 
+## Qu'est-ce-que le `NoSQL` ?
+
+En 1998, Carlo Strozzi appela NoSQL son système de gestion de bases de données open source qui ne proposait pas l'interface standard SQL
+
+En 2009 Johan Oskarsson, développeur à [Last.fm](https://last.fm) réintroduit le terme ``NoSQL`` avec le hashtag ***#NoSQL***, organisant l'événement *"open source distributed, non relational databases"*.
+
+Le mouvement `NoSQL` aujourd'hui :
+
+- Bases non-relationnelles
+- Open source
+- Cluster-friendly (pour permettre le calcul distribué)
+- Ne nécessite pas de schéma de table fixe
+- Ne présente pas ou peu de jointure (procédure coûteuse)
+
+En utilisant la classification orientée "modèle de données", on retrouve quatre familles de `NoSQL` :
+
+- ``key-value store``
+    - On a une clef unique en entrée, menant à toutes les valeurs d'une ligne (une table de hachage, puis un blob (texte en binaire))
+    - Très performant
+    - Supporte des données simples
+    - Est souvent ``ATOMIC``
+- ``Wide-column`` (aussi appelé ``Family``)
+    - Une clef unique donne une ligne. Cette ligne est séparée en colonnes, elles-même séparées en familles
+    - Les familles sont stockées séparément. Les familles différentes sont stockées sur des nœuds différents
+    - Si les colonnes sont bien séparées, est très performant
+- ``Document``
+    - On a une clef unique en entrée, menant à un objet. Il existe des clefs secondaires pour les objets
+    - Assez performant
+    - Utilise un schéma implicite pour les clefs secondaires
+    - Est ``ATOMIC``, pas ``ACID``
+    - Exemple : ``MongoDB`` avec le ``JSON``
+- ``Graph``
+    - Les clefs mènent toutes vers un ensemble d'autres nods (graphe dirigé)
+    - Moins performant si besoin d'accéder à tous les nods
+
+<http://nosql-database.org> -> On répertorie 255 solutions `NoSQL` !
+
+Les bases sans schéma :
+
+- Permettent de stocker tout ce qu'on souhaite en développant son schéma de manière incrémental avec le projet
+- Rends plus facile le traitement de données non-uniformes, où chaque élément possède un ensemble différent de champs
+
+Mais :
+
+- Ont aussi à chaque accès pratique une forme de schéma implicite (on suppose que certains champs avec certains types existent)
+- Ne sont pas optimisées automatiquement puisqu'elles ne connaissent pas leur propre schéma
+- Sont très propice au code spaghetti
+
 ## Sources
 
-- CM de Monsieur Ivan Benidi du 10/01/2022
+- CM de Monsieur Ivan Bedini du 10/01/2022
+- CM de Monsieur Ivan Bedini du 17/01/2022
