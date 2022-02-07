@@ -299,3 +299,50 @@ $$
 > 3. La règle de décision de Bayes $argmax_{y \in \{H, T\} P(y|x)}
 
 <!-- TODO: A Compléter -->
+
+### Exercice 3 : Jeu de Football
+
+> On souhaite prévoir l'issue d'un match de football à partir des données avant match.
+>
+> | À domicile ? | Balance positive ? | Pluie ? | Match précédent gagné ? | Issue du match |
+> |:------------:|:------------------:|:-------:|:-----------------------:|:--------------:|
+> |       V      |          V         |    F    |            F            |        V       |
+> |       F      |          F         |    V    |            V            |        V       |
+> |       V      |          V         |    V    |            F            |        V       |
+> |       V      |          V         |    F    |            V            |        V       |
+> |       F      |          V         |    V    |            V            |        F       |
+> |       F      |          F         |    V    |            F            |        F       |
+> |       V      |          F         |    F    |            V            |        F       |
+
+#### Question 2.19)
+
+> Estimez les probabilités de victoire et de défaite de cette équipe.
+
+On retrouve ces probabilités par lecture du tableau (colonne `issue du macth` : $P(V) = \frac{4}{7}$ et $P(F) = \frac{3}{7}$.
+
+#### Question 2.20)
+
+> Calculez la probabilité d'une des colonnes du tableau sachant la survenue ou non de la victoire $\forall i P(x_i = V|V), P(x_i = V|F)$.
+
+<!-- TODO : Détailler et expliquer -->
+
+|          |       0       |       1       |       2       |       3       |
+|:---------|:-------------:|:-------------:|:-------------:|:-------------:|
+| Victoire | $\frac{3}{4}$ | $\frac{3}{4}$ | $\frac{2}{4}$ | $\frac{2}{4}$ |
+| Défaite  | $\frac{1}{3}$ | $\frac{1}{3}$ | $\frac{2}{3}$ | $\frac{2}{3}$ |
+
+#### Question 2.21)
+
+> En supposant que chaque attribut est indépendant conditionnellement à chaque classe, classer l'élément ($V$, $F$, $V$, $F$).
+
+$$
+P(Résultat = V | V, F, V, F) \\
+P(V, F, V, F | Résultat = V) \times \frac{P(V)}{P(V, F, V, F)} \\
+P(V, F, V, F | Résultat = V) \times \frac{\frac{4}{7}}{P(V, F, V, F)} \\
+. \\
+. \\
+. \\
+P(Victoire) = 0.02679
+$$
+
+Il s'agit plutôt d'une victoire.
