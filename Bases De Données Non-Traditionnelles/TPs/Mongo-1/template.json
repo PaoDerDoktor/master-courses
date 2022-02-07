@@ -1,0 +1,14 @@
+{
+    "firstName": "$first",
+    "lastName":  "$last",
+    "birthday":  "$date",
+    "email":     "$email",
+    "gender":    "$gender",
+    "position":  "$point",
+    "reviews":  {"$array": { "of": {
+            "rating":  {"$float": {"min": 0, "max": 5, "fixed": 1}},
+            "email":   "$email",
+            "comment": {"$choose": {"from": ["cool", "meh", "boarf", "couillon", "hey salut"]}}
+        }, "number": {"$integer": {"min": 0, "max": 5}}}
+    }
+}
