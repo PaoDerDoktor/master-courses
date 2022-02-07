@@ -105,3 +105,47 @@ Il est important de choisir un pas $\alpha$ de bon calibre : trop grand, la desc
 <!-- TODO: Compléter -->
 
 Une regression linéaire peut avoir plusieurs paramètres. Dans ce cas on pose $d$ le nombre de variables, $x$ un vecteur colonne contenant chaque $x^{(1)}, x^{(2)}, ..., x^{(d)}$ et $\theta$ un vecteur colonne contenant chaque $\theta^{(1)}, \theta^{(2)}, ..., \theta^{(d)}$. On peut ajouter $\theta_0$ dans $\theta$ si on ajoute xxxx
+
+## Exemple de régression non-linéaire
+
+**L'idée :** en réécrivant le problème à l'aide de *l'aire* $X_s= X_l X_L$, on retrouve un problème linéaire de type $y = \theta_0 + \theta_1 X.
+
+Dans tous les cas, on essaie de se ramener à des cas linéaires. On réécris les problèmes pour se retrouver à nouveau dans le cas linéaire, c'est toujours faisable.
+
+Mettons-nous dans un cadre où notre regression est quadratique : $y = \theta_0 + \theta_1 x + \theta_2 x^2$.
+
+On peut réécrire :
+
+$$
+y = \theta_0 + \theta_1 x + \theta_2 x^2 \rightarrow y = \theta_0 x^{(0)} + \theta_1 x^{(1)} + \theta_2 x^{(2)}
+$$
+
+On a donc :
+
+$$
+x =
+\begin{Bmatrix}
+    1 \\ x \\ x^2
+\end{Bmatrix}
+$$
+
+Si on se met dans un cadre où cette regression est cubique : $y = \theta_0 + \theta_1 x + \theta_2 x^2 + \theta_3 x^3$.
+
+On peut réécrire :
+
+$$
+y = \theta_0 + \theta_1 x + \theta_2 x^2 + \theta_3 x^3 \rightarrow y = \theta_0 x^{(0)} + \theta_1 x^{(1)} + \theta_2 x^{(2)} + \theta_3 x^{(3)}
+$$
+
+On a donc :
+
+$$
+x =
+\begin{Bmatrix}
+    1 \\ x \\ x^2 \\ x^3
+\end{Bmatrix}
+$$
+
+On peut imaginer ce système avec n'importe quel famille de fonctions.
+
+<!-- TODO : Ajouter une partie plus complète et détaillée sur les différentes familles de fonctions -->
